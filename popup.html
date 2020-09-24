@@ -2,25 +2,34 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <!-- 부트스트랩 css -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- 직접만든 css링크 -->
         <link rel="stylesheet" href="./popup.css">
 
     </head>
     <body>
         <div class="container">
+            <!-- 상단 헤더부분 만들기 -->
             <header>
                 <div id="head1" class="jumbotron text-center">
+                    <!-- 구글밋 아이콘 넣기 -->
                     <img src="./meet.png">
+                    <!-- 앱이름 넣기 -->
                     <h4 class="display-5">Meet Dictation</h4>
                 </div>
             </header>
+            <!-- SST 변환되서 입력되는 부분 -->
             <div class="chat_wrap">
                 <textarea class="result"></textarea>
             </div>
+            <!-- 누가 말하고있는지 실시간으로 보여지는부분 -->
             <textarea class="who"></textarea>
         </div>
+        <!-- 부트스트랩 스크립트 -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- 여기에 우리가만든 스크립트 추가해주세요 -->
     </body>
 </html>
