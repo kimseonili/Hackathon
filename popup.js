@@ -17,16 +17,19 @@ try {
 
 recognition.lang = 'ko-KR';
 recognition.interimResults = false;
-recognition.maxAlternatives = 5;
-
-
-
+recognition.maxAlternatives = 100;
+recognition.continuous = true;
+let interval;
+let flag = true
 function speech_to_text() {
 
     recognition.start();
     isRecognizing = true;
 
     recognition.onstart = function () {
+        if(flag){
+            // interval = setInterval(function(){speech_to_text()}, 5000);
+        }
         console.log("음성인식이 시작 되었습니다. 이제 마이크에 무슨 말이든 하세요.")
         message.innerHTML = "음성인식 시작...";
         button.innerHTML = "Listening...";
@@ -42,9 +45,10 @@ function speech_to_text() {
 
     recognition.onresult = function (event) {
         console.log('You said: ', event.results[0][0].transcript);
-    
-        var resText = event.results[0][0].transcript;
-        korea.innerHTML = resText;
+        console.log(event.results)
+        var len = event.results.length - 1
+        var resText = event.results[len][0].transcript;
+        korea.innerHTML += resText;
 
     
         text_to_speech(resText);
@@ -95,3 +99,6 @@ function text_to_speech(txt) {
     };
    
 }
+
+
+
