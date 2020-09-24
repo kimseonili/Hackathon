@@ -53,6 +53,7 @@ body{
     border-color: lavender;
     border-radius: 10px;
 }
+
 .result::-webkit-scrollbar {
     width: 10px;
 }
@@ -63,7 +64,7 @@ body{
 }
 .result::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-color: grey;
+    background-color: #b0b4bb;;
     box-shadow: inset 0px 0px 7px white;
 }
 .who{
