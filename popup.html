@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- 직접만든 css링크 -->
         <link rel="stylesheet" href="./popup.css" type="text/css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -21,9 +22,10 @@
                         <h4 class="display-5">Meet Dictation</h4>
                     </div>
                     <!-- 온오프 스위치 -->
-                    <div class='toggleBG'>
-                        <button class='toggleFG'></button>
-                    </div>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
             </header>
             <!-- SST 변환되서 입력되는 부분 -->
