@@ -4,7 +4,6 @@ var stop = document.querySelector('#stop');
 stop.addEventListener('click',function(){stop()})
 var korea = document.querySelector("#korea");
 var isRecognizing = false;
-
 if ('SpeechRecognition' in window) {
     console.log("음성인식을 지원하는 브라우저입니다.")
 }
